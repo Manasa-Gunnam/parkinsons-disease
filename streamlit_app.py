@@ -3,7 +3,15 @@ import numpy as np
 import pickle
 
 # Load model
-model = pickle.load(open("parkinsons_model.pkl", "rb"))
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model_path = os.path.join(BASE_DIR, "parkinsons_model.pkl")
+scaler_path = os.path.join(BASE_DIR, "scaler.pkl")
+
+model = pickle.load(open(model_path, "rb"))
+scaler = pickle.load(open(scaler_path, "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
 st.title("Parkinson's Disease Prediction")
