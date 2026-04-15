@@ -113,9 +113,30 @@ def main_app():
             else:
                 st.success(f"✅ Healthy (Confidence: {confidence:.2f}%)")
 
-    elif page == "About":
-        st.title("About Project")
-        st.write("Parkinson's Disease Prediction using Machine Learning.")
+# ================================
+# ABOUT PAGE
+# ================================
+elif page == "About":
+
+    st.markdown("""
+    ## 📘 About This Project
+
+    This application uses Machine Learning models to predict Parkinson's Disease 
+    based on voice measurements.
+
+    ### 🚀 Features
+    - High accuracy ML models
+    - Clean and modern UI
+    - Real-time prediction
+
+    ### 🧠 Models Used
+    - Support Vector Machine
+    - Random Forest
+    - XGBoost
+
+    ### 👨‍💻 Developed By
+    (Add your name here)
+    """)
 
 # ================================
 # APP ROUTING
