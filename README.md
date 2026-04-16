@@ -1,91 +1,97 @@
 # 🧠 Parkinson's Disease Prediction System
 
 ## 📌 Overview
-The Parkinson's Disease Prediction System is a Machine Learning-based web application that predicts whether a person is affected by Parkinson’s disease using biomedical voice measurements.
+This project is a Machine Learning-based web application that predicts whether a person is affected by Parkinson’s disease using biomedical voice measurements.
 
-This project implements and compares multiple machine learning models to achieve better prediction accuracy and reliability.
+The system uses multiple machine learning models and selects the best-performing model based on evaluation metrics.
 
 ---
 
 ## 🎯 Objectives
-- To develop a predictive system for early detection of Parkinson’s disease  
-- To compare multiple machine learning algorithms  
-- To improve prediction accuracy using ensemble techniques  
-- To build and deploy a user-friendly web application  
+- Build a reliable prediction system for Parkinson’s disease  
+- Compare multiple machine learning models  
+- Achieve high accuracy using optimized algorithms  
+- Deploy an interactive web application  
 
 ---
 
-## 🧪 Dataset Information
-- Source: UCI Machine Learning Repository / Kaggle  
-- Total Features: 22 biomedical voice measurements  
-- Target Variable:
+## 🧪 Dataset
+- Source: UCI ML Repository / Kaggle  
+- Features: 22 biomedical voice measurements  
+- Target:
   - `1` → Parkinson’s Disease  
   - `0` → Healthy  
-
-### 🔍 Feature Categories:
-- Frequency-based features (Fo, Fhi, Flo)  
-- Jitter and Shimmer (voice variations)  
-- Noise ratios (NHR, HNR)  
-- Nonlinear measures (RPDE, DFA, PPE)  
 
 ---
 
 ## ⚙️ Tech Stack
-- **Programming Language:** Python  
-- **Libraries:** NumPy, Pandas, Scikit-learn, XGBoost  
-- **Web Framework:** Streamlit  
-- **Development Platform:** Google Colab  
-- **Version Control & Deployment:** GitHub  
+- Python  
+- NumPy, Pandas  
+- Scikit-learn  
+- XGBoost  
+- Streamlit  
+- Google Colab  
+- GitHub  
 
 ---
 
-## 🧠 Machine Learning Models Used
+## 🧠 Models Used
+- Support Vector Machine (SVM)  
+- Random Forest Classifier  
+- XGBoost Classifier  
 
-### 1. Support Vector Machine (SVM)
-- Effective in high-dimensional spaces  
-- Works well with smaller datasets  
-
-### 2. Random Forest Classifier
-- Ensemble learning method  
-- Reduces overfitting  
-- Handles non-linear relationships  
-
-### 3. XGBoost Classifier
-- Gradient boosting algorithm  
-- High performance and accuracy  
-- Efficient handling of complex patterns  
+All models were tuned using **GridSearchCV** for optimal performance.
 
 ---
 
-## 🔄 Machine Learning Workflow
-1. Data Collection  
-2. Data Preprocessing  
-   - Feature scaling (StandardScaler)  
-3. Train-Test Split (80:20)  
-4. Model Training (SVM, Random Forest, XGBoost)  
-5. Model Evaluation & Comparison  
-6. Best Model Selection  
-7. Model Serialization using Pickle  
+## 📊 Model Performance
+
+### 🔹 SVM
+- Accuracy: **89.74%**
+
+### 🔹 Random Forest
+- Accuracy: **92.31%**
+
+### 🔹 XGBoost
+- Accuracy: **92.31%**
 
 ---
 
-## 📊 Model Performance Comparison
+## 🏆 Best Model Selected
+**Random Forest Classifier**  
+- Accuracy: **92.31%**
 
-| Model            | Accuracy (Approx) |
-|------------------|------------------|
-| SVM              | ~85%             |
-| Random Forest    | ~88%             |
-| XGBoost          | ~90%             |
+Reason:
+- Balanced precision and recall  
+- Better performance on both classes  
+- More stable predictions  
 
-> ✅ XGBoost achieved the best performance and was selected for deployment.
+---
+
+## 📈 Evaluation Metrics
+
+### 🔹 Classification Report Summary
+- High precision and recall for Parkinson’s class  
+- Good balance between false positives and false negatives  
+
+---
+
+## 📊 Visualizations
+
+### 🔹 ROC Curve
+![ROC Curve](roc_curve.png)
+
+### 🔹 Precision-Recall Curve
+![Precision Recall](precision_recall.png)
 
 ---
 
 ## 🖥️ Application Features
-- Interactive UI using Streamlit  
-- Real-time disease prediction  
-- Input validation and error handling  
-- Fast and responsive performance  
+- User-friendly Streamlit interface  
+- Real-time prediction  
+- Multiple model comparison  
+- Graph-based analysis  
+- Input validation  
 
 ---
 
