@@ -79,10 +79,12 @@ Reason:
 ## 📊 Visualizations
 
 ### 🔹 ROC Curve
-![ROC Curve](roc_curve.png)
+![ROC Curve](<img width="567" height="455" alt="image" src="https://github.com/user-attachments/assets/ed5c7fd3-03ab-47db-b7d6-048e23d942d5" />
+)
 
 ### 🔹 Precision-Recall Curve
-![Precision Recall](precision_recall.png)
+![Precision Recall](<img width="576" height="455" alt="image" src="https://github.com/user-attachments/assets/5f5d9724-32c9-4545-acca-73b8c2ae7ae9" />
+)
 
 ---
 
